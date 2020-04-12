@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  react-microservice-prod:
+    container_name: react-microservice-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '8080:3000'
+
